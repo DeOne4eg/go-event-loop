@@ -1,0 +1,12 @@
+FROM golang:1.16
+
+RUN go version
+ENV GOPATH=/go
+
+COPY . /go/src/go-event-loop
+
+WORKDIR /go/src/go-event-loop/cmd/server
+
+RUN go build -o server main.go
+
+CMD ["./server"]

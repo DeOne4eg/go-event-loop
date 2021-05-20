@@ -1,0 +1,31 @@
+version: '2'
+services:
+  client:
+    build:
+      context: ./
+      dockerfile: Dockerfile.client
+    container_name: client
+    depends_on:
+      - rabbit1
+    command: ["./client"]
+  server:
+    build:
+      context: ./
+      dockerfile: Dockerfile.server
+    container_name: server
+    depends_on:
+      - rabbit1
+    command: ["./server"]
+  rabbit1:
+    image: "rabbitmq:3-management"
+    hostname: "rabbit1"
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "HxBcLPN7Uf4p9aNW"
+      RABBITMQ_DEFAULT_USER: "rabbitmq"
+      RABBITMQ_DEFAULT_PASS: "rabbitmq"
+      RABBITMQ_DEFAULT_VHOST: "/"
+    ports:
+      - 15672:15672
+      - 5672:5672
+    labels:
+      NAME: "rabbitmq1"
