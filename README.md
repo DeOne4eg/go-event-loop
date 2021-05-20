@@ -1,3 +1,16 @@
+![Go Report](https://goreportcard.com/badge/github.com/DeOne4eg/go-event-loop)
+![Repository Top Language](https://img.shields.io/github/languages/top/DeOne4eg/go-event-loop)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/DeOne4eg/go-event-loop)
+![Codacy Grade](https://img.shields.io/codacy/grade/c9467ed47e064b1981e53862d0286d65)
+![Github Repository Size](https://img.shields.io/github/repo-size/DeOne4eg/go-event-loop)
+![Github Open Issues](https://img.shields.io/github/issues/DeOne4eg/go-event-loop)
+![Lines of code](https://img.shields.io/tokei/lines/github/DeOne4eg/go-event-loop)
+![License](https://img.shields.io/badge/license-MIT-green)
+![GitHub last commit](https://img.shields.io/github/last-commit/DeOne4eg/go-event-loop)
+![GitHub contributors](https://img.shields.io/github/contributors/DeOne4eg/go-event-loop)
+
+<img align="right" src="./images/go.png">
+
 # RabbitMQ Test case
 
 ## Task description
